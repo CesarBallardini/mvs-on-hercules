@@ -143,5 +143,6 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
 # Apéndice B: Bibliografía
 
 * https://web.archive.org/web/20160512175419/http://tk3.comlu.com/mvs380/Vintage_Manuals.html
+* http://bitsavers.org/pdf/ibm/360/princOps/A22-6821-0_360PrincOps.pdf _IBM System/360 Principles of Operation_ 1964 ([copialocal](docs/A22-6821-0_360PrincOps.pdf))
 * [BASE PROGRAM DIRECTORY FOR MVS 3.8J](docs/mvs38bas.pdf) PROGRAM DIRECTORY FOR USE WITH RELEASE 3.8 OF OS/VS2 (MVS) RELEASE 3.8J 5752-VS2 "Service Level 8208 "9029/9031"
 
