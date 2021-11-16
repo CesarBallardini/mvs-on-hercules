@@ -1,6 +1,6 @@
 # README - MVS 3.8j Tur(n)key 4- System on Hercules
 
-MVS es un sistema operativo IBM que en la actualidad se puede usar sin licencias privativas restrictivas.
+MVS 3.8j (24-bit, liberado en 1981) es un sistema operativo IBM que en la actualidad se puede usar libremente. 
 
 En las versiones de z/OS actuales se puede ver todavía los trazos de diseño de MVS  de la arquitectura OS/370.
 
@@ -106,22 +106,19 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
 
 # Referencias
 
-* http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf
+* https://en.wikipedia.org/wiki/MVS historia del sistema operativo y relación con predecesores y sucesores.
+* http://wotho.ethz.ch/tk4-/ The MVS 3.8j Tur(n)key 4- System / OS/VS2 MVS 3.8j Service Level 8505 / Tur(n)key Level 4- Version 1.00: el sistema que estaremos usndo
+* http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf : referencias al `logon`, `logoff`
 
 * https://media.ccc.de/v/vcfb18_-_96_-_en_-_201810141000_-_running_your_own_mainframe_on_linux_for_fun_and_profit_-_jeroen_baten Running your own mainframe on Linux (for fun and profit) <br/>
   Yes, this talk is about running your own mainframe on your own hardware. Mainframes are old, yes, but they are still very much alive. New hardware is still being developed and there are a lot of fresh jobs in this area too. A lot of mainframes run COBOL workloads. COBOL is far from a dead language. It processes an estimated 85% of all business transactions, and 5 billion lines of new COBOL code are written every year. In this session the speaker will help you take your first steps towards running your own mainframe. If you like then after this session you can continue to build your knowledge of mainframe systems using the links provided during the talk. Come on in and learn the basics of a completely different computer system! And it will take you less than an hour to do that!
 
 
-* http://wotho.ethz.ch/tk4-/ The MVS 3.8j Tur(n)key 4- System / OS/VS2 MVS 3.8j Service Level 8505 / Tur(n)key Level 4- Version 1.00
-
-
-
-
-
-* https://kevindurant.be/2019/03/17/mom-part-1-setting-up-my-own-mainframe/ MOM Pt. 001: Setting up my own Mainframe!
-* https://kevindurant.be/2019/03/21/mom-pt-002-custom-netsol-sign-on-screen/ MOM Pt. 002: Custom NETSOL Sign-On Screen
-* https://kevindurant.be/2019/05/03/mom-pt-003-getting-to-know-cobol-compiling/ MOM Pt. 003: Getting to know COBOL – Compiling
-* https://kevindurant.be/2019/07/12/mom-pt-004-writing-simple-cobol-on-mvs3-8-tk4/ MOM Pt. 004: Writing simple COBOL on MVS3.8 tk4-
+* My Own Mainframe: serie de artículos
+  * https://kevindurant.be/2019/03/17/mom-part-1-setting-up-my-own-mainframe/ MOM Pt. 001: Setting up my own Mainframe!
+  * https://kevindurant.be/2019/03/21/mom-pt-002-custom-netsol-sign-on-screen/ MOM Pt. 002: Custom NETSOL Sign-On Screen
+  * https://kevindurant.be/2019/05/03/mom-pt-003-getting-to-know-cobol-compiling/ MOM Pt. 003: Getting to know COBOL – Compiling
+  * https://kevindurant.be/2019/07/12/mom-pt-004-writing-simple-cobol-on-mvs3-8-tk4/ MOM Pt. 004: Writing simple COBOL on MVS3.8 tk4-
 
 # Bibliografía
 
