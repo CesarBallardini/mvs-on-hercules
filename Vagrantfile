@@ -56,8 +56,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     srv.vm.provider :virtualbox do |vb|
       vb.gui = false
-      vb.cpus = 4
-      vb.memory = "8192"
+      vb.cpus = 2
+      vb.memory = "2048"
 
       # https://github.com/hashicorp/vagrant/issues/9524#issuecomment-385990711
       # Cuando el nombre de dirctorio mas nombre de machine tiene largo mayor a 64 caracteres
