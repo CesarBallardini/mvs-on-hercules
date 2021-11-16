@@ -93,7 +93,7 @@ Cualquier usuario con acceso de lectura al perfil `DIAG8CMD` en la clase `RAKF F
 
 ## 6. Apagar Hercules
 
-Si desea apagar Hercules, sin cuidado del sistema operaivo, en la consola de Hercules, escribir:
+Si desea apagar Hercules, sin cuidado del sistema operativo, en la consola de Hercules, escribir:
 
 ```
 quit
