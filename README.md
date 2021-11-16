@@ -111,6 +111,7 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
 ## A.1. MVS
 
 * https://en.wikipedia.org/wiki/MVS historia del sistema operativo y relación con predecesores y sucesores.
+* https://archive.org/details/mvsconceptsfacil0000john _MVS: concepts and facilities_ by Johnson, Robert H, 1989 (disponible para retiro temporal por usuarios registrados)
 
 ## A.2. The MVS 3.8j Tur(n)key 4- System
 
