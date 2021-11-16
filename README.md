@@ -106,11 +106,23 @@ El sistema operativo no pudo cerrarse ordenadamente, y es muy posible que se hay
 
 Luego del apagado, nos devuelve al _prompt_ de la VM.
 
-# Referencias
+# Apéndice A: Referencias
+
+## A.1. MVS
 
 * https://en.wikipedia.org/wiki/MVS historia del sistema operativo y relación con predecesores y sucesores.
+
+## A.2. The MVS 3.8j Tur(n)key 4- System
+
 * http://wotho.ethz.ch/tk4-/ The MVS 3.8j Tur(n)key 4- System / OS/VS2 MVS 3.8j Service Level 8505 / Tur(n)key Level 4- Version 1.00: el sistema que estaremos usndo
 * http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf : referencias al `logon`, `logoff`
+* https://bsp-gmbh.pocnet.net/turnkey/cookbook/index.html The MVS Tur(n)key System New User's Cookbook / Instrucciones de instalación sobre Hercules, a partir de un CDROM con la distribución.
+
+* http://jaymoseley.com/hercules/compilers/list_of.htm Language Compilers Available for MVS 3.8
+* http://www.jaymoseley.com/hercules/compiling/how_to.htm Assembling, Compiling, Link-Editing, and Executing User-Written Programs
+
+
+## A.3. Charlas de divulgación
 
 * https://media.ccc.de/v/vcfb18_-_96_-_en_-_201810141000_-_running_your_own_mainframe_on_linux_for_fun_and_profit_-_jeroen_baten Running your own mainframe on Linux (for fun and profit) <br/>
   Yes, this talk is about running your own mainframe on your own hardware. Mainframes are old, yes, but they are still very much alive. New hardware is still being developed and there are a lot of fresh jobs in this area too. A lot of mainframes run COBOL workloads. COBOL is far from a dead language. It processes an estimated 85% of all business transactions, and 5 billion lines of new COBOL code are written every year. In this session the speaker will help you take your first steps towards running your own mainframe. If you like then after this session you can continue to build your knowledge of mainframe systems using the links provided during the talk. Come on in and learn the basics of a completely different computer system! And it will take you less than an hour to do that!
@@ -122,6 +134,13 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
   * https://kevindurant.be/2019/05/03/mom-pt-003-getting-to-know-cobol-compiling/ MOM Pt. 003: Getting to know COBOL – Compiling
   * https://kevindurant.be/2019/07/12/mom-pt-004-writing-simple-cobol-on-mvs3-8-tk4/ MOM Pt. 004: Writing simple COBOL on MVS3.8 tk4-
 
-# Bibliografía
+## A.4. Hercules
+
+* https://hercdoc.glanzmann.org/V400/HerculesUserReference.pdf Hercules System/370, ESA/390, z/Architecture Emulator / Hercules – User Reference Guide / Version 4 Release 00 ([copia local](docs/HerculesUserReference.pdf))
+
+
+# Apéndice B: Bibliografía
 
 * https://web.archive.org/web/20160512175419/http://tk3.comlu.com/mvs380/Vintage_Manuals.html
+* [BASE PROGRAM DIRECTORY FOR MVS 3.8J](docs/mvs38bas.pdf) PROGRAM DIRECTORY FOR USE WITH RELEASE 3.8 OF OS/VS2 (MVS) RELEASE 3.8J 5752-VS2 "Service Level 8208 "9029/9031"
+
