@@ -2,6 +2,8 @@
 
 MVS 3.8j (24-bit, liberado en 1981) es un sistema operativo IBM que en la actualidad se puede usar libremente. 
 
+Hercules es un emulador de la arquitectura IBM mainframe.
+
 En las versiones de z/OS actuales se puede ver todavía los trazos de diseño de MVS  de la arquitectura OS/370.
 
 Aprender a usar esta clase de sistemas es un hobby para aquellos que jamás los utilizamos, y es una añoranza para los que trabajaron 
