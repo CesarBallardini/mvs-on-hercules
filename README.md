@@ -49,29 +49,64 @@ c3270 -port 3270 127.0.0.1
 c3270 -port 3270 192.168.56.11 
 ```
 
-## 3. Login en MVS
+## 3. Logon en MVS
 
-FIXME
+En el sistema Tur(n)key hay ciertas cuentas de usuario predefinidas:
+
+| Nombre de cuenta | Contraseña | Capacidades |
+|------------------|------------|-------------|
+| `HERC01`         | `CUL8TR`   | Todos los permisos. Acceso total a tablas de usuarios y perfiles. |
+| `HERC02`         | `CUL8TR`   | Todos los permisos. Acceso total a tablas de usuarios y perfiles. |
+| `HERC03`         | `PASS4U`   | Usuario normal. |
+| `HERC04`         | `PASS4U`   | Usuario normal. |
+| `IBMUSER`        | `IBMPASS`  | Todos los permisos. Acceso total a tablas de usuarios y perfiles. Se debe usar sólo para tareas de recuperación. |
+
+
+El **LOGON** en TSO se hace escribiendo el nombre de usuario y apretando ENTER.  Si pide la contraseña, debe ingresarla y luego apretar ENTER.
+
+El sistema da la bienvenida con `Welcome to TSO`, aprete ENTER.
+
+El sistema muestra un *fortune cookie*, aprete ENTER.
+
+El sistema muestra ahora el menú de las `TSO Applications`. Desde allí puede seleccionar la aplicación que desea ejecutar ingresando el número del ítem
+en el campo `Option==>`.  Desde el menú de las aplicaciones TSO, para salir nuevamente a la consola TSO, debe apretar la tecla `PF3` --- `F3` en la mayoría de los teclados físicos, o bien puede usar el teclado virtual del emulador de terminal. El *prompt* de TSO es `READY`: puede escribir mandatos TSO allí.
+
 
 ## 4. Logoff de MVS
 
-FIXME
+Una vez en el sistema TSO (aprete `F3` hasta salir de todos los menúes), escriba `logoff` y aprete ENTER.
+
+La terminal no se desconectará, sino que va a mostrar nuevamente la pantalla de `LOGON`
+
+Si no va a reingresar, puede desconectar y apagar (el emulador de) la terminal.
 
 ## 5. Apagar MVS
 
-FIXME
+1. Ingresar con la cuenta `HERC01` ó `HERC02`.
+2. Apretar `PF3` desde el menú de aplicaciones TSO para ir al *prompt* `READY` de TSO.
+3. Escriba `shutdown` y aprete ENTER.
+4. Escriba `logoff` y aprete ENTER.
+
+Luego de una pausa de 30 segundos, el procedimiento automático de `shutdown` baja el sistema MVS y luego apaga el emulador Hercules, lo cual es equivalente a quitar la energía al mainframe IBM 3033.
+
+Cualquier usuario con acceso de lectura al perfil `DIAG8CMD` en la clase `RAKF FACILITY` puede iniciar la secuancia de *shutdown*.
 
 ## 6. Apagar Hercules
 
-En la consola de Hercules, escribir:
+Si desea apagar Hercules, sin cuidado del sistema operaivo, en la consola de Hercules, escribir:
 
 ```
 quit
 ```
 
-Esto nos devuelve al _prompt_ de la VM.
+El sistema operativo no pudo cerrarse ordenadamente, y es muy posible que se haya dañado la instalación del mismo.
+
+
+Luego del apagado, nos devuelve al _prompt_ de la VM.
 
 # Referencias
+
+* http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf
 
 * https://media.ccc.de/v/vcfb18_-_96_-_en_-_201810141000_-_running_your_own_mainframe_on_linux_for_fun_and_profit_-_jeroen_baten Running your own mainframe on Linux (for fun and profit) <br/>
   Yes, this talk is about running your own mainframe on your own hardware. Mainframes are old, yes, but they are still very much alive. New hardware is still being developed and there are a lot of fresh jobs in this area too. A lot of mainframes run COBOL workloads. COBOL is far from a dead language. It processes an estimated 85% of all business transactions, and 5 billion lines of new COBOL code are written every year. In this session the speaker will help you take your first steps towards running your own mainframe. If you like then after this session you can continue to build your knowledge of mainframe systems using the links provided during the talk. Come on in and learn the basics of a completely different computer system! And it will take you less than an hour to do that!
@@ -88,3 +123,6 @@ Esto nos devuelve al _prompt_ de la VM.
 * https://kevindurant.be/2019/05/03/mom-pt-003-getting-to-know-cobol-compiling/ MOM Pt. 003: Getting to know COBOL – Compiling
 * https://kevindurant.be/2019/07/12/mom-pt-004-writing-simple-cobol-on-mvs3-8-tk4/ MOM Pt. 004: Writing simple COBOL on MVS3.8 tk4-
 
+# Bibliografía
+
+* https://web.archive.org/web/20160512175419/http://tk3.comlu.com/mvs380/Vintage_Manuals.html
