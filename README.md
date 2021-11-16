@@ -63,8 +63,13 @@ FIXME
 
 ## 6. Apagar Hercules
 
-FIXME
+En la consola de Hercules, escribir:
 
+```
+quit
+```
+
+Esto nos devuelve al _prompt_ de la VM.
 
 # Referencias
 
