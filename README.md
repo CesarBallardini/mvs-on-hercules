@@ -25,7 +25,12 @@ Primero lo primero:
 ## 1. Levantar la VM Ubuntu con emulador Hercules y Turnkey MVS instalados
 
 ```bash
-time vagrant up
+cp Vagrantfile.docker     Vagrantfile ; time vagrant up  # usa Docker como provider, ej. en MAC con M1
+
+#  o bien:
+
+cp Vagrantfile.virtualbox Vagrantfile ; time vagrant up  # usa Virtualbox como provider
+
 ```
 
 ## 2. Levantar MVS
