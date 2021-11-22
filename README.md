@@ -1,13 +1,16 @@
 # README - MVS 3.8j Tur(n)key 4- System on Hercules
 
-MVS 3.8j (24-bit, liberado en 1981) es un sistema operativo IBM que en la actualidad se puede usar libremente. 
+MVS 3.8j (24-bit, liberado en 1981) es un sistema operativo IBM que en la actualidad se puede usar libremente.
+La descripción específica es IBM's OS/VS2 (MVS) operating system (Program-Number
+5752-VS2, Release 3.8j, Service Level approx. 8505), que está en el dominio público.
 
-Hercules es un emulador de la arquitectura IBM mainframe.
+Hercules es un emulador de la arquitectura IBM mainframe. Hércules es [softwre libre](https://www.gnu.org/licenses/license-list.es.html#QPL) y [open source](https://opensource.org/licenses/QPL-1.0), bajo la *Q Public License Version 1.0*.
 
 En las versiones de z/OS actuales se puede ver todavía los trazos de diseño de MVS  de la arquitectura OS/370.
 
 Aprender a usar esta clase de sistemas es un hobby para aquellos que jamás los utilizamos, y es una añoranza para los que trabajaron 
-en su juventud con ellos.
+en su juventud con ellos. Por otro lado es una forma de aprender los conceptos imprerecederos de los sistemas IBM desde 1960 hasta ahora,
+[disfrutando sólo la diversión, sin los problemas legales](https://www.youtube.com/watch?v=Ga2YpebRukU&list=PLmD2RvHHbEaBa5elMJRsodJuVisNFTakU&index=82).
 
 Voy a presentar el uso cotidiano desde el punto de vista de un desarrollador de mediados de los '80.
 En cada documento tendremos una consigna y veremos lo necesario para poder cumplirla.
@@ -117,6 +120,11 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
 
 * https://en.wikipedia.org/wiki/MVS historia del sistema operativo y relación con predecesores y sucesores.
 * https://archive.org/details/mvsconceptsfacil0000john _MVS: concepts and facilities_ by Johnson, Robert H, 1989 (disponible para retiro temporal por usuarios registrados)
+* https://bsp-gmbh.pocnet.net/turnkey/cookbook/oscmd.html MVS and JES2 Commands Cheat Sheet
+* https://bsp-gmbh.pocnet.net/turnkey/cookbook/vtamref.html OS/VS VTAM Reference Overview for VTAM Level 2
+* https://bsp-gmbh.pocnet.net/turnkey/cookbook/howto.html HOW TO
+* https://bsp-gmbh.pocnet.net/turnkey/cookbook/utilmvs_toc.html Utilities
+
 
 ## A.2. The MVS 3.8j Tur(n)key 4- System
 
@@ -139,6 +147,9 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
   * https://kevindurant.be/2019/03/21/mom-pt-002-custom-netsol-sign-on-screen/ MOM Pt. 002: Custom NETSOL Sign-On Screen
   * https://kevindurant.be/2019/05/03/mom-pt-003-getting-to-know-cobol-compiling/ MOM Pt. 003: Getting to know COBOL – Compiling
   * https://kevindurant.be/2019/07/12/mom-pt-004-writing-simple-cobol-on-mvs3-8-tk4/ MOM Pt. 004: Writing simple COBOL on MVS3.8 tk4-
+
+* https://web.archive.org/web/20021019025921/http://www.byte.com/documents/s=429/byt20000801s0002/ Summer Potpourri: Mainframes And X By Moshe Bar;  Byte.com, August 1, 2000
+
 
 ## A.4. Hercules
 
