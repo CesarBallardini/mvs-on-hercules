@@ -36,21 +36,69 @@ instala_emulador_3270() {
 
 
 instala_tk4_minus() {
+  [ -d /vagrant/tmp/ ] || mkdir /vagrant/tmp/
+
+  pushd /vagrant/tmp/
   [ -f tk4-_v1.00_current.zip ] || wget http://wotho.ethz.ch/tk4-/tk4-_v1.00_current.zip
   [ -f tk4-cbt.zip ]            || wget http://wotho.ethz.ch/tk4-/tk4-cbt.zip # optional
   [ -f tk4-source.zip ]         || wget http://wotho.ethz.ch/tk4-/tk4-source.zip # optional
+  popd
 
   mkdir -p ~/mvs/
-  cd ~/mvs/
+  pushd ~/mvs/
 
-  unzip ../tk4-_v1.00_current.zip
-  unzip -o ../tk4-cbt.zip
-  unzip -o ../tk4-source.zip
+  unzip /vagrant/tmp/tk4-_v1.00_current.zip
+  unzip -o /vagrant/tmp/tk4-cbt.zip
+  unzip -o /vagrant/tmp/tk4-source.zip
 
   # ./unattended/set_console_mode hace lo siguiente:
   echo "CONSOLE" > ./unattended/mode
+  popd
 
 }
+
+
+
+# https://groups.io/g/turnkey-mvs/message/1677
+# Rob Prins:
+#  I have updated my TK4- system.
+#  I have installed ISPF 2.2, RPF 191, REVIEW 50.1, New ISPF panels for RPF 3.4,
+#  RPF edit, browse, PDS and Reset stats.
+#  Option 4 of ISPF contains the RPF foreground assembler.
+#  Option M of ISPF contains the "old" TSOAPPLS menu.
+#  I have installed a lot of usermods, like TMVS16, TMVS17, ZP60033, ZP60034, ZP60038,
+#  ZP60039, ZP60040, ZP60041, ZP60042, ZP60043 and TNIP800.
+#  The HERC01.REVPROF, HERC02.REVPROF, HERC03.REVPROF and HERC04.REVPROF
+#  datasets are deleted (REVIEW does not need them anymore).
+#  I've allocated HERC01/2/3/4.ISP.PROF for ISPF and REVIEW.
+#  The initial CLIST is changed and will not call TSOAPPLS anymore, but will go directly to ISPF.
+#  I have installed BREXX/370 V2R5M0 including the fix found on github. The version = REXX/370 V2R5M0 (Oct 22 2021)
+#
+#
+#  You can download all the disks from www.prince-webdesign.nl/images/tk4rob.zip
+#  Place this file into the root directory of the TK4 system.
+#  This file replaces the dasd directory in your TK4 system.
+#  Please rename your current dasd directory first before unzipping this file.
+# 
+#  BTW: this update also contains an installation of the Archiver (file 147 on cbttape.org).
+#  In HERC01.TEST.CNTL you will find the jobs I used and some other interesting jobs.
+
+instala_tk4_rob() {
+  [ -d /vagrant/tmp/ ] || mkdir /vagrant/tmp/
+  pushd /vagrant/tmp/
+  [ -f tk4rob.zip ] || wget http://www.prince-webdesign.nl/images/tk4rob.zip
+  popd
+
+  pushd ~/mvs/
+  mv ./dasd ./dasd-tk4-.orig
+  unzip /vagrant/tmp/tk4rob.zip
+  # ./unattended/set_console_mode hace lo siguiente:
+  echo "CONSOLE" > ./unattended/mode
+  popd
+
+}
+
+
 
 ##
 # main
@@ -60,6 +108,7 @@ instala_requisitos
 instala_emulador_3270
 preconfigura_x3270
 instala_tk4_minus
+instala_tk4_rob
 
 # corre hercules y hace IPL de MVS 3.8j
 # ./mvs
