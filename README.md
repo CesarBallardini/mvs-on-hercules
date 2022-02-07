@@ -128,8 +128,8 @@ Luego del apagado, nos devuelve al _prompt_ de la VM.
 
 ## A.2. The MVS 3.8j Tur(n)key 4- System
 
-* http://wotho.ethz.ch/tk4-/ The MVS 3.8j Tur(n)key 4- System / OS/VS2 MVS 3.8j Service Level 8505 / Tur(n)key Level 4- Version 1.00: el sistema que estaremos usndo
-* http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf : referencias al `logon`, `logoff`
+* https://wotho.ethz.ch/tk4-/ The MVS 3.8j Tur(n)key 4- System / OS/VS2 MVS 3.8j Service Level 8505 / Tur(n)key Level 4- Version 1.00: el sistema que estaremos usndo
+* https://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf : referencias al `logon`, `logoff`
 * https://bsp-gmbh.pocnet.net/turnkey/cookbook/index.html The MVS Tur(n)key System New User's Cookbook / Instrucciones de instalación sobre Hercules, a partir de un CDROM con la distribución.
 
 * http://jaymoseley.com/hercules/compilers/list_of.htm Language Compilers Available for MVS 3.8

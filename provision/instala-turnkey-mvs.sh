@@ -39,9 +39,9 @@ instala_tk4_minus() {
   [ -d /vagrant/tmp/ ] || mkdir /vagrant/tmp/
 
   pushd /vagrant/tmp/
-  [ -f tk4-_v1.00_current.zip ] || wget http://wotho.ethz.ch/tk4-/tk4-_v1.00_current.zip
-  [ -f tk4-cbt.zip ]            || wget http://wotho.ethz.ch/tk4-/tk4-cbt.zip # optional
-  [ -f tk4-source.zip ]         || wget http://wotho.ethz.ch/tk4-/tk4-source.zip # optional
+  [ -f tk4-_v1.00_current.zip ] || wget https://wotho.ethz.ch/tk4-/tk4-_v1.00_current.zip
+  [ -f tk4-cbt.zip ]            || wget https://wotho.ethz.ch/tk4-/tk4-cbt.zip # optional
+  [ -f tk4-source.zip ]         || wget https://wotho.ethz.ch/tk4-/tk4-source.zip # optional
   popd
 
   mkdir -p ~/mvs/
